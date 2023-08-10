@@ -219,7 +219,7 @@ class Axis:
         if self.is_axis_linear(data):
             self._scaling = np.mean(np.diff(data))
             self._offset = data[0]
-            self._data = None
+
 
     def is_axis_linear(self, data=None):
         if data is None:
